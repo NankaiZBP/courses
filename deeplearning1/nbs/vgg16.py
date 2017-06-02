@@ -170,7 +170,7 @@ class Vgg16():
                 batches : A keras.preprocessing.image.ImageDataGenerator object.
                           See definition for get_batches().
         """
-		#self.ft(batches.nb_class)
+        #self.ft(batches.nb_class)
         self.ft(batches.num_class)
         classes = list(iter(batches.class_indices)) # get a list of all the class labels
         
